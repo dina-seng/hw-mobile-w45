@@ -162,7 +162,6 @@ import 'package:flutter/material.dart';
 // }
 
 // EX 5
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(
@@ -205,9 +204,14 @@ void main() {
                         borderRadius: BorderRadius.circular(25),
                       ),
                       alignment: Alignment.centerLeft,
-                      child: const Text(
-                        'My hobbies',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      child: Center(
+                        child: const Text(
+                          'My hobbies',
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 212, 179, 179),
+                            fontSize: 20,
+                          ),
+                        ),
                       ),
                     ),
 
@@ -219,7 +223,7 @@ void main() {
                         // Left Card: Soccer
                         Expanded(
                           child: Container(
-                            height: 160,
+                            height: 250,
                             decoration: BoxDecoration(
                               color: Colors.orange[200],
                               borderRadius: BorderRadius.circular(20),
@@ -240,21 +244,43 @@ void main() {
 
                         // Right Card: Flutter
                         Expanded(
-                          child: Container(
-                            height: 160,
-                            decoration: BoxDecoration(
-                              color: Colors.deepOrange[700],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: const Center(
-                              child: Text(
-                                'Flutter',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  color: Colors.deepOrange[700],
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    'NoSQL',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                    ),
+                                  ),
                                 ),
                               ),
-                            ),
+
+                              SizedBox(height: 24),
+                              Container(
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  color: Colors.deepPurple[700],
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    'Flutter',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
