@@ -3,21 +3,21 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 //Ex 1
-// void main() {
-//   runApp(
-//     MaterialApp(
-//       home: Scaffold(
-//         backgroundColor: Colors.yellow,
-//         body: Center(
-//           child: Text(
-//             'Bonjour! je appele Dina',
-//             style: TextStyle(color: Colors.cyan),
-//           ),
-//         ),
-//       ),
-//     ),
-//   );
-// }
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.yellow,
+        body: Center(
+          child: Text(
+            'Bonjour! je appele Dina',
+            style: TextStyle(color: Colors.cyan),
+          ),
+        ),
+      ),
+    ),
+  );
+}
 
 // EX 2
 // void main() {
@@ -163,167 +163,167 @@ import 'package:flutter/material.dart';
 
 // EX 5
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: Column(
-          children: [
-            // 1. Top Header Bar ("Welcome !")
-            Container(
-              height: 80,
-              width: double.infinity,
-              color: Colors.deepOrange[400],
-              child: const Center(
-                child: Text(
-                  'Welcome !',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-            ),
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         backgroundColor: Colors.white,
+//         body: Column(
+//           children: [
+//             // 1. Top Header Bar ("Welcome !")
+//             Container(
+//               height: 80,
+//               width: double.infinity,
+//               color: Colors.deepOrange[400],
+//               child: const Center(
+//                 child: Text(
+//                   'Welcome !',
+//                   style: TextStyle(
+//                     color: Colors.white,
+//                     fontSize: 24,
+//                     fontWeight: FontWeight.w500,
+//                   ),
+//                 ),
+//               ),
+//             ),
 
-            // 2. Middle Content Area (My hobbies + 2 Cards)
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(24.0),
-                child: Column(
-                  children: [
-                    // Black rounded banner ("My hobbies")
-                    Container(
-                      height: 80,
-                      width: double.infinity,
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      alignment: Alignment.centerLeft,
-                      child: Center(
-                        child: const Text(
-                          'Bonjour! je m\'appelle Dina',
-                          style: TextStyle(color: Colors.white, fontSize: 20),
-                        ),
-                      ),
-                    ),
+//             // 2. Middle Content Area (My hobbies + 2 Cards)
+//             Expanded(
+//               child: Padding(
+//                 padding: const EdgeInsets.all(24.0),
+//                 child: Column(
+//                   children: [
+//                     // Black rounded banner ("My hobbies")
+//                     Container(
+//                       height: 80,
+//                       width: double.infinity,
+//                       padding: const EdgeInsets.symmetric(horizontal: 24),
+//                       decoration: BoxDecoration(
+//                         color: Colors.black,
+//                         borderRadius: BorderRadius.circular(25),
+//                       ),
+//                       alignment: Alignment.centerLeft,
+//                       child: Center(
+//                         child: const Text(
+//                           'Bonjour! je m\'appelle Dina',
+//                           style: TextStyle(color: Colors.white, fontSize: 20),
+//                         ),
+//                       ),
+//                     ),
 
-                    const SizedBox(height: 24),
+//                     const SizedBox(height: 24),
 
-                    // Two side-by-side hobby cards ("Soccer" & "Flutter")
-                    Row(
-                      children: [
-                        // Left Card: Soccer
-                        Expanded(
-                          child: Container(
-                            height: 250,
-                            decoration: BoxDecoration(
-                              color: Colors.orange[200],
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: const Center(
-                              child: Text(
-                                'edtudé da Francé',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
+//                     // Two side-by-side hobby cards ("Soccer" & "Flutter")
+//                     Row(
+//                       children: [
+//                         // Left Card: Soccer
+//                         Expanded(
+//                           child: Container(
+//                             height: 250,
+//                             decoration: BoxDecoration(
+//                               color: Colors.orange[200],
+//                               borderRadius: BorderRadius.circular(20),
+//                             ),
+//                             child: const Center(
+//                               child: Text(
+//                                 'edtudé da Francé',
+//                                 style: TextStyle(
+//                                   color: Colors.white,
+//                                   fontSize: 20,
+//                                 ),
+//                               ),
+//                             ),
+//                           ),
+//                         ),
 
-                        const SizedBox(width: 24),
+//                         const SizedBox(width: 24),
 
-                        // Right Card: Flutter
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 160,
-                                decoration: BoxDecoration(
-                                  color: Colors.deepOrange[700],
-                                  borderRadius: BorderRadius.circular(20),
-                                ),
-                                child: const Center(
-                                  child: Text(
-                                    'Merci Beaucoup',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                    ),
-                                  ),
-                                ),
-                              ),
+//                         // Right Card: Flutter
+//                         Expanded(
+//                           child: Column(
+//                             children: [
+//                               Container(
+//                                 height: 160,
+//                                 decoration: BoxDecoration(
+//                                   color: Colors.deepOrange[700],
+//                                   borderRadius: BorderRadius.circular(20),
+//                                 ),
+//                                 child: const Center(
+//                                   child: Text(
+//                                     'Merci Beaucoup',
+//                                     style: TextStyle(
+//                                       color: Colors.white,
+//                                       fontSize: 20,
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
 
-                              SizedBox(height: 24),
-                              Container(
-                                height: 160,
-                                decoration: BoxDecoration(
-                                  color: Colors.deepPurple[700],
-                                  borderRadius: BorderRadius.circular(20),
-                                ),
-                                child: const Center(
-                                  child: Text(
-                                    'Cèst CADT université',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
+//                               SizedBox(height: 24),
+//                               Container(
+//                                 height: 160,
+//                                 decoration: BoxDecoration(
+//                                   color: Colors.deepPurple[700],
+//                                   borderRadius: BorderRadius.circular(20),
+//                                 ),
+//                                 child: const Center(
+//                                   child: Text(
+//                                     'Cèst CADT université',
+//                                     style: TextStyle(
+//                                       color: Colors.white,
+//                                       fontSize: 20,
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ],
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ),
 
-            // 3. Bottom Navigation Bar with 3 White Circles
-            Container(
-              height: 80,
-              color: Colors.deepOrange[400],
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: 55.0,
-                    height: 55.0,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  Container(
-                    width: 55.0,
-                    height: 55.0,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  Container(
-                    width: 55.0,
-                    height: 55.0,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    ),
-  );
-}
+//             // 3. Bottom Navigation Bar with 3 White Circles
+//             Container(
+//               height: 80,
+//               color: Colors.deepOrange[400],
+//               child: Row(
+//                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//                 children: [
+//                   Container(
+//                     width: 55.0,
+//                     height: 55.0,
+//                     decoration: const BoxDecoration(
+//                       color: Colors.white,
+//                       shape: BoxShape.circle,
+//                     ),
+//                   ),
+//                   Container(
+//                     width: 55.0,
+//                     height: 55.0,
+//                     decoration: const BoxDecoration(
+//                       color: Colors.white,
+//                       shape: BoxShape.circle,
+//                     ),
+//                   ),
+//                   Container(
+//                     width: 55.0,
+//                     height: 55.0,
+//                     decoration: const BoxDecoration(
+//                       color: Colors.white,
+//                       shape: BoxShape.circle,
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//   );
+// }
