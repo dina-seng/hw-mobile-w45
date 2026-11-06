@@ -206,11 +206,8 @@ void main() {
                       alignment: Alignment.centerLeft,
                       child: Center(
                         child: const Text(
-                          'My hobbies',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 212, 179, 179),
-                            fontSize: 20,
-                          ),
+                          'Bonjour! je m\'appelle Dina',
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                       ),
                     ),
@@ -230,7 +227,7 @@ void main() {
                             ),
                             child: const Center(
                               child: Text(
-                                'Soccer',
+                                'edtudé da Francé',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
@@ -254,7 +251,7 @@ void main() {
                                 ),
                                 child: const Center(
                                   child: Text(
-                                    'NoSQL',
+                                    'Merci Beaucoup',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20,
@@ -272,7 +269,7 @@ void main() {
                                 ),
                                 child: const Center(
                                   child: Text(
-                                    'Flutter',
+                                    'Cèst CADT université',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20,
